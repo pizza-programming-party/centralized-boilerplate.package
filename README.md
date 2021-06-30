@@ -1,5 +1,5 @@
 # centralized-boilerplate.package
-Are you tired of copying the same old boring code when you want to make a new package? Well, stop it. Outsource your boring code to me, the boring code guy. If you occasionally check for package updates, you can continue to benifit. Read more here: https://pizzaisdavid.medium.com/reducing-boilerplate-between-repositories-83157f253d01  
+Are you tired of copying the same old boring code when you want to make a new package? Well, stop it. Outsource your boring code to me, the boring code guy. If you occasionally check for package updates, you can continue to benefit. Read more here: https://pizzaisdavid.medium.com/reducing-boilerplate-between-repositories-83157f253d01  
 
 # How to use
 1. Add this package as a dev dependency.
