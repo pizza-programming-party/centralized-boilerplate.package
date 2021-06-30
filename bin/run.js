@@ -33,7 +33,12 @@ boiler.run(path.resolve(__dirname, '..'), [
     action: 'full-text-replace',
     source: [ 'gulpfile.ts' ],
     destination: [ 'gulpfile.ts' ]
-  }
+  },
+  {
+    action: 'json-merge',
+    source: [ 'package.json' ],
+    destination: [ 'package.json' ]
+  },
 ])
 
 boiler.install([
