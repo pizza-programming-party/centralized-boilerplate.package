@@ -18,7 +18,7 @@ Are you tired of copying the same old boring code when you want to make a new pa
     ```
 1. Scream in horror as computers are beginning to take your job.
 
-# Don't like a decisions?
+# Don't like a decision?
 Then blacklist it. In the root folder of your project, create a file called `centralized-boilerplate.json` and add the following:
 ```
 {
