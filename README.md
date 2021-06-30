@@ -1,31 +1,6 @@
 # centralized-boilerplate.package
-Are you tired of copying the same old boring code when you want to make a new package? Well, stop it. Outsource your boring code to me, the boring code guy. If you occasionally check for package updates, you can continue to benefit. Read more here: https://pizzaisdavid.medium.com/reducing-boilerplate-between-repositories-83157f253d01  
+Are you tired of copying the same old boring code when you want to make a new package? Well, then stop it. Outsource your boring code to me, the boring code guy. If you occasionally check for updates and then run the `boil` command, which is explained in the link below, then you will continue to benefit.
 
-# How to use
-1. Add this package as a dev dependency.
-    ```
-    npm install centralized-boilerplate.package --save-dev
-    ```
-1. Add the boil command in your package.
-    ```
-    "scripts": {
-      "boil": "node ./node_modules/centralized-boilerplate.package/bin/run.js"
-    }
-    ```
-1. Run the command.
-    ```
-    npm run boil
-    ```
-1. Scream in horror as computers are beginning to take your job.
+How to setup: https://github.com/pizza-programming-party/centralized-boilerplate#how-to-use
 
-# Don't like a decision I made?
-Then sue me! Wait... no, that's not what the script says. *Ahem.* Then blacklist it. In the root folder of your project, you can create a file called `centralized-boilerplate.json` and add the following.
-```
-{
-  "blacklist": [
-    [ "whatever.txt" ]
-  ]
-}
-
-```
-Where `blacklist` is an array of filenames you do not want touched.
+Read more about the concept here: https://pizzaisdavid.medium.com/reducing-boilerplate-between-repositories-83157f253d01  
