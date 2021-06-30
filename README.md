@@ -18,8 +18,8 @@ Are you tired of copying the same old boring code when you want to make a new pa
     ```
 1. Scream in horror as computers are beginning to take your job.
 
-# Don't like a decision?
-Then blacklist it. In the root folder of your project, create a file called `centralized-boilerplate.json` and add the following:
+# Don't like a decision I made?
+Then sue me! Wait... no, that's not what the script says. *Ahem* Then blacklist it. In the root folder of your project, you can create a file called `centralized-boilerplate.json` and add the following. Where `blacklist` is an array of filenames you do not want touched.
 ```
 {
   "blacklist": [
