@@ -1,6 +1,6 @@
 {
   "name": "centralized-boilerplate.package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Boilerplate generator for NPM packages",
   "main": "index.js",
   "scripts": {
