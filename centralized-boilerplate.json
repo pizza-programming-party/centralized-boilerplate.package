@@ -1,6 +1,7 @@
 {
   "blacklist": [
     [ "gulpfile.ts" ],
+    [ "package.json" ],
     [ "tsconfig.base.json" ]
   ]
 }

@@ -1,0 +1,61 @@
+# This file is managed by a centralized-boilerplate package.
+# https://github.com/pizza-programming-party/centralized-boilerplate
+
+image: node:14.16.1
+
+stages:
+  - install
+  - build
+  - test
+  - publish
+
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  script:
+    - npm --version
+    - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+    - npm install
+  except:
+    - main
+
+lint:
+  stage: build
+  script:
+    - npm run lint
+  except:
+    - main
+
+build:
+  stage: build
+  script:
+    - npm run build
+  except:
+    - main
+
+unit:
+  stage: test
+  script:
+    - npm run test
+  except:
+    - main
+
+e2e:
+  stage: test
+  script:
+    - npm run e2e
+  except:
+    - main
+
+publish:
+  stage: publish
+  script:
+    - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+    - npm install
+    - npm run build
+    - npm publish
+  only:
+    - main

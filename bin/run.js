@@ -16,8 +16,8 @@ boiler.run(path.resolve(__dirname, '..'), [
   },
   {
     action: 'full-text-replace',
-    source: [ 'tsconfig.json' ],
-    destination: ['tsconfig.json' ]
+    source: [ 'tsconfig.base.json' ],
+    destination: ['tsconfig.base.json' ]
   },
   {
     action: 'full-text-replace',
@@ -40,6 +40,18 @@ boiler.run(path.resolve(__dirname, '..'), [
     destination: [ 'package.json' ]
   },
 ])
+
+boiler.conditional(path.resolve(__dirname, '..'), {
+  ci: {
+    gitlab: [
+      {
+        action: 'full-text-replace',
+        source: [ 'gitlab-ci.yml' ],
+        destination: [ 'gitlab-ci.yml' ]
+      }
+    ]
+  }
+})
 
 boiler.install([
   {

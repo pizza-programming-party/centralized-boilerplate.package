@@ -1,6 +1,6 @@
 /**
- * This file is managed by
- * @pizza-programming-party/centralized-package-boilerplate
+ * This file is managed by a centralized-boilerplate package.
+ * https://github.com/pizza-programming-party/centralized-boilerplate
  */
 {
   "compileOnSave": false,

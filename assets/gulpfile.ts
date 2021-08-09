@@ -1,4 +1,5 @@
-// This file is managed by a centralized-boilerplate package
+// This file is managed by a centralized-boilerplate package.
+// https://github.com/pizza-programming-party/centralized-boilerplate
 
 import * as child from 'child_process'
 import * as gulp from 'gulp'
