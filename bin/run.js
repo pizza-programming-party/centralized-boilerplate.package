@@ -21,6 +21,11 @@ boiler.run(path.resolve(__dirname, '..'), [
   },
   {
     action: 'full-text-replace',
+    source: [ 'tsconfig.json' ],
+    destination: ['tsconfig.json' ]
+  },
+  {
+    action: 'full-text-replace',
     source: [ 'vscode', 'extensions.json' ],
     destination: [ '.vscode', 'extensions.json' ]
   },
