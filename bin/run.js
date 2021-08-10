@@ -47,7 +47,7 @@ boiler.conditional(path.resolve(__dirname, '..'), {
       {
         action: 'full-text-replace',
         source: [ 'gitlab-ci.yml' ],
-        destination: [ 'gitlab-ci.yml' ]
+        destination: [ '.gitlab-ci.yml' ]
       }
     ]
   }
